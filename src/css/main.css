@@ -1,2 +1,7 @@
+@import url(common.css);
 @import url(layout.css);
 @import url(header.css);
+@import url(center.css);
+@import url(slider.css);
+@import url(footer.css);
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Lato:ital,wght@1,900&family=Roboto+Slab:wght@500&display=swap");
