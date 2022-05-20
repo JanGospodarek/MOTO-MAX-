@@ -42,7 +42,7 @@ main {
   grid-row: 4/6;
 }
 footer {
-  background-color: aquamarine;
-  grid-column: 3/15;
+  background-color: lightgrey;
+  grid-column: 2/16;
   grid-row: 6;
 }

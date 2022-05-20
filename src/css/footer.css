@@ -1,0 +1,17 @@
+.footerContent {
+  padding-top: 5px;
+  width: 250px;
+  border: 1px solid black;
+  text-align: center;
+  height: 100%;
+}
+.footerLeft {
+  float: left;
+}
+.footerContent > a,
+.footerContent > p {
+  font-size: 20px;
+}
+.footerRight {
+  float: right;
+}
