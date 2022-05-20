@@ -6,9 +6,9 @@
   align-items: center;
 }
 .menu > a {
-  display: block;
+  display: flex;
   width: 22%;
-  height: 80%;
+  height: 90%;
   text-align: center;
   font-size: 27px;
   line-height: 27px;

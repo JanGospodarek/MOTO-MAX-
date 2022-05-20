@@ -33,7 +33,6 @@ main {
   grid-row: 4;
 }
 .contentMain {
-  background-color: aquamarine;
   grid-column: 2/12;
   grid-row: 5;
 }
