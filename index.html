@@ -5,22 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="src/css/main.css" />
-    <script defer type="module" src="/src/js/controller.js"></script>
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <script defer type="module" src="./src/js/controller.js"></script>
   </head>
   <body>
     <main>
+      <!-- overlay -->
+      <div class="overlay hidden"></div>
+
       <!-- LOGO -->
       <div class="logo flexCenter">
-        <img src="/src/img/logo.png" alt="log" />
+        <img src="./src/img/logo.png" alt="log" />
       </div>
 
       <!-- MENU -->
       <div class="menu">
         <a class="flexCenter" href="#">AKCESORIA <br />MX I ATV</a
         ><a class="flexCenter" href="#">CZĘŚCI <br />MX I ATV</a>
-        <a class="flexCenter" href="#">UBRANIA<br />MX</a
-        ><a class="flexCenter" href="#">KONTAKT</a>
+        <a class="flexCenter" href="#">UBRANIA<br />MX</a>
+        <button id="btnContact" class="flexCenter">KONTAKT</button>
       </div>
 
       <!-- CONTENT ONE -->
@@ -28,15 +31,15 @@
         <form class="searchForm">
           <input type="search" name="search" class="searchInput" />
           <button type="submit" class="submit flexCenter">
-            <img src="src/img/search-icon.png" alt="Szukaj" width="30" />
+            <img src="./src/img/search-icon.png" alt="Szukaj" width="30" />
           </button>
         </form>
         <div class="btnCont">
           <button class="btn flexCenter">
-            <img src="src/img/account-icon.png" alt="" width="30" />
+            <img src="./src/img/account-icon.png" alt="" width="30" />
           </button>
           <button class="btn flexCenter">
-            <img src="src/img/basket-icon.png" alt="" width="30" />
+            <img src="./src/img/basket-icon.png" alt="" width="30" />
           </button>
         </div>
       </div>
@@ -44,20 +47,20 @@
       <!-- SLIDER -->
       <div class="slider">
         <div class="slide">
-          <img src="src/img/slider/slider1.png" alt="oferta1" />
+          <img src="./src/img/slider/slider1.png" alt="oferta1" />
         </div>
 
         <div class="slide">
-          <img src="src/img/slider/slider2.png" alt="oferta2" />
+          <img src="./src/img/slider/slider2.png" alt="oferta2" />
         </div>
         <div class="slide">
-          <img src="src/img/slider/slider3.png" alt="oferta2" />
+          <img src="./src/img/slider/slider3.png" alt="oferta2" />
         </div>
         <button class="slider__btn flexCenter slider__btn--left">
-          <img src="src/img/arrow-left.png" alt="" width="30" />
+          <img src="./src/img/arrow-left.png" alt="" width="30" />
         </button>
         <button class="slider__btn flexCenter slider__btn--right">
-          <img src="src/img/arrow-right.png" alt="" width="30" />
+          <img src="./src/img/arrow-right.png" alt="" width="30" />
         </button>
         <div class="dots"></div>
       </div>
@@ -113,6 +116,52 @@
           <p href="">Pn-Pt 8:00-19:00</p>
         </div>
       </footer>
+      <!-- modals -->
+      <div class="modal contactCont hidden">
+        <p>Skontaktuj się z nami</p>
+        <form class="contactForm">
+          <input class="firstRow" type="text" name="imie" placeholder="Imię" />
+          <input
+            class="firstRow"
+            type="text"
+            name="nazwisko"
+            placeholder="Nazwisko"
+          />
+          <input
+            class="secondRow"
+            type="email"
+            name="email"
+            placeholder="e-mail"
+          />
+          <div class="plecCont secondRow">
+            <p class="flexCenter">
+              <input type="radio" name="plec" value="Męczyzna" /> Mężczyzna
+            </p>
+            <p class="flexCenter">
+              <input type="radio" name="plec" value="Kobieta" /> Kobieta
+            </p>
+          </div>
+
+          <textarea
+            class="thirdRow"
+            name="msg"
+            placeholder="Wiadomość do nas"
+          ></textarea>
+          <input class="fourthRow" type="submit" value="Wyślij" />
+        </form>
+        <div class="map">
+          <p>Tutaj jesteśmy:</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3143.2571817551097!2d19.921587172687758!3d50.04603373512796!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b7a5a0e622b%3A0xd5d25c4b488e7d88!2zVGVjaG5pa3VtIMWBxIVjem5vxZtjaSBOciAxNCB3IFpTIMWBxIVjem5vxZtjaSB3IEtyYWtvd2ll!5e0!3m2!1spl!2spl!4v1653146625295!5m2!1spl!2spl"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
     </main>
   </body>
 </html>

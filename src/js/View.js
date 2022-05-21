@@ -13,8 +13,8 @@ export class View {
     this.parentElement.insertAdjacentHTML("afterbegin", markup);
   }
 
-  addHandlerShowWindow(query) {
-    this.btnOpen = document.querySelector(`.${query}`);
+  addHandlerShowWindow() {
+    // this.btnOpen = document.querySelector(`.${query}`);
     this.btnOpen.addEventListener("click", this.showWindow.bind(this));
   }
 

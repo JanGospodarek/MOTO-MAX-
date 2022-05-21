@@ -1,4 +1,4 @@
-export const data = [
+export const productD = [
   {
     describtion: "Kask Raven Ipsum",
     price: 1299,

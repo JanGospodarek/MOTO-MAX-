@@ -1,5 +1,5 @@
-import { data } from "/src/js/productsData.js";
-
+import { productD } from "./productsData.js";
+console.log(productD);
 export let state = {
-  products: data,
+  products: productD,
 };
