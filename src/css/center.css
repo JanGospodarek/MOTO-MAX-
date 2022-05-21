@@ -9,6 +9,9 @@
   justify-content: space-around;
   padding: 5px;
 }
+.describtion {
+  line-height: 17px;
+}
 .contentMain {
   display: flex;
   flex-wrap: wrap;
@@ -17,7 +20,6 @@
 .product {
   height: 280px;
   width: 210px;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,4 +30,7 @@
 .cena {
   font-size: larger;
   text-decoration: underline;
+}
+.preview {
+  height: 200px;
 }
