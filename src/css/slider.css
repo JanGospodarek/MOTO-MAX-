@@ -26,13 +26,14 @@
   color: #333;
   cursor: pointer;
   height: 100%;
+  width: 50px;
 }
 .slider__btn--left {
-  left: 6%;
+  left: 3%;
   transform: translate(-50%, -50%);
 }
 .slider__btn--right {
-  right: 6%;
+  right: 3%;
   transform: translate(50%, -50%);
 }
 .dots {
