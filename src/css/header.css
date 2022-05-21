@@ -14,6 +14,12 @@
   font-size: 27px;
   line-height: 27px;
   cursor: pointer;
+  border-radius: 5px;
+  /* border: 1px solid black; */
+}
+.menu > button:hover,
+.menu > a:hover {
+  background-color: rgb(243, 243, 243);
 }
 /* CONTENT ONE */
 .contentOne {
@@ -44,4 +50,52 @@
 }
 .btn {
   height: 90%;
+}
+.dropMenu {
+  position: relative;
+  z-index: 999;
+  width: auto;
+  border-radius: 5px;
+  overflow: hidden;
+  /* border: 1px solid black; */
+  transition: all 0.2s;
+  /* border: 1px solid black; */
+}
+#akcesoria {
+  top: 128px;
+  left: 343px;
+  height: 0;
+  /* height: 120px;
+   */
+  width: 120px;
+}
+#czesci {
+  top: 128px;
+  right: 529px;
+  height: 0;
+  /* height: 60px; */
+  width: 50px;
+}
+#ubrania {
+  top: -18px;
+  left: 689px;
+  height: 0;
+  /* height: 60px; */
+  width: 90px;
+}
+.dropMenu a {
+  width: 100%;
+  height: 30px;
+  background-color: lightgray;
+  transition: all 0.2s;
+  padding: 0 3px 0 3px;
+}
+.dropMenu a:first-child {
+  border-radius: 5px 5px 0 0;
+}
+.dropMenu a:last-child {
+  border-radius: 0 0 5px 5px;
+}
+.dropMenu a:hover {
+  background-color: rgb(150, 150, 150);
 }

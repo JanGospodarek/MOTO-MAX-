@@ -20,12 +20,30 @@
 
       <!-- MENU -->
       <div class="menu">
-        <a class="flexCenter" href="#">AKCESORIA <br />MX I ATV</a
-        ><a class="flexCenter" href="#">CZĘŚCI <br />MX I ATV</a>
-        <a class="flexCenter" href="#">UBRANIA<br />MX</a>
+        <a data-hover="akcesoria" class="flexCenter category akcesoria" href="#"
+          >AKCESORIA <br />MX I ATV</a
+        ><a data-hover="czesci" class="flexCenter category czesci" href="#"
+          >CZĘŚCI <br />MX I ATV</a
+        >
+        <a data-hover="ubrania" class="flexCenter category ubrania" href="#"
+          >UBRANIA<br />MX</a
+        >
         <button id="btnContact" class="flexCenter">KONTAKT</button>
       </div>
-
+      <div class="dropMenu" id="akcesoria">
+        <a class="flexCenter" href="#">Oleje i smary</a>
+        <a class="flexCenter" href="#">Wyposażenie</a>
+        <a class="flexCenter" href="#">Elektronika</a>
+        <a class="flexCenter" href="#">Narzędzia</a>
+      </div>
+      <div class="dropMenu" id="czesci">
+        <a class="flexCenter" href="#">MX</a>
+        <a class="flexCenter" href="#">ATV</a>
+      </div>
+      <div class="dropMenu" id="ubrania">
+        <a class="flexCenter" href="#">Damskie</a>
+        <a class="flexCenter" href="#">Męskie</a>
+      </div>
       <!-- CONTENT ONE -->
       <div class="contentOne">
         <form class="searchForm">
@@ -117,49 +135,58 @@
         </div>
       </footer>
       <!-- modals -->
-      <div class="modal contactCont hidden">
-        <p>Skontaktuj się z nami</p>
-        <form class="contactForm">
-          <input class="firstRow" type="text" name="imie" placeholder="Imię" />
-          <input
-            class="firstRow"
-            type="text"
-            name="nazwisko"
-            placeholder="Nazwisko"
-          />
-          <input
-            class="secondRow"
-            type="email"
-            name="email"
-            placeholder="e-mail"
-          />
-          <div class="plecCont secondRow">
-            <p class="flexCenter">
-              <input type="radio" name="plec" value="Męczyzna" /> Mężczyzna
-            </p>
-            <p class="flexCenter">
-              <input type="radio" name="plec" value="Kobieta" /> Kobieta
-            </p>
-          </div>
+      <div class="modal contactCont hidden flexCenter">
+        <div class="con">
+          <p>Skontaktuj się z nami</p>
+          <form class="contactForm">
+            <input
+              class="firstRow"
+              type="text"
+              name="imie"
+              placeholder="Imię"
+            />
+            <input
+              class="firstRow"
+              type="text"
+              name="nazwisko"
+              placeholder="Nazwisko"
+            />
+            <input
+              class="secondRow"
+              type="email"
+              name="email"
+              placeholder="e-mail"
+              required
+            />
+            <div class="plecCont secondRow">
+              <p class="flexCenter">
+                <input type="radio" name="plec" value="Męczyzna" /> Mężczyzna
+              </p>
+              <p class="flexCenter">
+                <input type="radio" name="plec" value="Kobieta" /> Kobieta
+              </p>
+            </div>
 
-          <textarea
-            class="thirdRow"
-            name="msg"
-            placeholder="Wiadomość do nas"
-          ></textarea>
-          <input class="fourthRow" type="submit" value="Wyślij" />
-        </form>
-        <div class="map">
-          <p>Tutaj jesteśmy:</p>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3143.2571817551097!2d19.921587172687758!3d50.04603373512796!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b7a5a0e622b%3A0xd5d25c4b488e7d88!2zVGVjaG5pa3VtIMWBxIVjem5vxZtjaSBOciAxNCB3IFpTIMWBxIVjem5vxZtjaSB3IEtyYWtvd2ll!5e0!3m2!1spl!2spl!4v1653146625295!5m2!1spl!2spl"
-            width="400"
-            height="300"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+            <textarea
+              class="thirdRow"
+              name="msg"
+              placeholder="Wiadomość do nas"
+              required
+            ></textarea>
+            <input class="fourthRow" type="submit" value="Wyślij" />
+          </form>
+          <div class="map">
+            <p>Tutaj jesteśmy:</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3143.2571817551097!2d19.921587172687758!3d50.04603373512796!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b7a5a0e622b%3A0xd5d25c4b488e7d88!2zVGVjaG5pa3VtIMWBxIVjem5vxZtjaSBOciAxNCB3IFpTIMWBxIVjem5vxZtjaSB3IEtyYWtvd2ll!5e0!3m2!1spl!2spl!4v1653146625295!5m2!1spl!2spl"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </div>
     </main>

@@ -1,47 +1,95 @@
 /* Style tworzące layout strony */
 
 /* LAYOUT */
-main {
-  width: 1020px;
-  height: 100%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: 135px 40px 232px 60px 605px 160px;
-  grid-gap: 10px;
-}
-.logo {
-  grid-column: 2/5;
-  grid-row: 1/3;
-}
+@media (max-width: 1400px) {
+  main {
+    width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: 135px 40px 232px 60px 605px 160px;
+    grid-gap: 10px;
+  }
+  .logo {
+    grid-column: 2/5;
+    grid-row: 1/3;
+  }
 
-.menu {
-  grid-column: 5/16;
-  grid-row: 1;
+  .menu {
+    grid-column: 5/16;
+    grid-row: 1;
+  }
+  .contentOne {
+    grid-column: 5/15;
+    grid-row: 2;
+  }
+  .slider {
+    background-color: aquamarine;
+    grid-column: 3/15;
+    grid-row: 3;
+  }
+  .contentTwo {
+    grid-column: 2/12;
+    grid-row: 4;
+  }
+  .contentMain {
+    grid-column: 2/12;
+    grid-row: 5;
+  }
+  .contentSide {
+    grid-column: 12/16;
+    grid-row: 4/6;
+  }
+  footer {
+    background-color: lightgrey;
+    grid-column: 2/16;
+    grid-row: 6;
+  }
 }
-.contentOne {
-  grid-column: 5/15;
-  grid-row: 2;
-}
-.slider {
-  background-color: aquamarine;
-  grid-column: 3/15;
-  grid-row: 3;
-}
-.contentTwo {
-  grid-column: 2/12;
-  grid-row: 4;
-}
-.contentMain {
-  grid-column: 2/12;
-  grid-row: 5;
-}
-.contentSide {
-  grid-column: 12/16;
-  grid-row: 4/6;
-}
-footer {
-  background-color: lightgrey;
-  grid-column: 2/16;
-  grid-row: 6;
+@media (min-width: 1400px) {
+  main {
+    width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: 135px 40px 232px 60px 605px 160px;
+    grid-gap: 10px;
+  }
+  .logo {
+    grid-column: 2/5;
+    grid-row: 1/3;
+  }
+
+  .menu {
+    grid-column: 5/16;
+    grid-row: 1;
+  }
+  .contentOne {
+    grid-column: 5/15;
+    grid-row: 2;
+  }
+  .slider {
+    background-color: aquamarine;
+    grid-column: 3/15;
+    grid-row: 3;
+  }
+  .contentTwo {
+    grid-column: 2/12;
+    grid-row: 4;
+  }
+  .contentMain {
+    grid-column: 2/12;
+    grid-row: 5;
+  }
+  .contentSide {
+    grid-column: 12/16;
+    grid-row: 4/6;
+  }
+  footer {
+    background-color: lightgrey;
+    grid-column: 2/16;
+    grid-row: 6;
+  }
 }
