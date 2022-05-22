@@ -3,19 +3,36 @@ export class View {
   parentElement;
   btnOpen;
   btnClose;
+
   window;
   overlay = document.querySelector(".overlay");
 
-  render(data, clear = true) {
-    if (clear) this.parentElement.innerHTML = "";
+  render(data, clear = true, useWindow = false) {
     this.data = data;
     const markup = this.generateMarkup();
-    this.parentElement.insertAdjacentHTML("afterbegin", markup);
+    if (clear) {
+      if (useWindow) {
+        this.window.innerHTML = "";
+        this.window.insertAdjacentHTML("afterbegin", markup);
+      } else {
+        this.parentElement.innerHTML = "";
+        this.parentElement.insertAdjacentHTML("afterbegin", markup);
+      }
+    }
   }
 
-  addHandlerShowWindow() {
+  addHandlerShowWindow(array = false) {
     // this.btnOpen = document.querySelector(`.${query}`);
-    this.btnOpen.addEventListener("click", this.showWindow.bind(this));
+    // console.log(this.btnOpen);
+    if (array) {
+      this.btnOpen.forEach((element) => {
+        element.addEventListener("click", this.showWindow.bind(this));
+        // if (element.dataset) this.dataset = element.dataset.id;
+      });
+    } else {
+      this.btnOpen.addEventListener("click", this.showWindow.bind(this));
+      // if (this.btnOpen.dataset) return (this.dataset = this.btnOpen.dataset.id);
+    }
   }
 
   addHandlerHideWindow() {
@@ -34,3 +51,4 @@ export class View {
   }
   generateMarkup() {}
 }
+export const view = new View();

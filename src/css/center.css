@@ -10,10 +10,15 @@
 }
 .product {
   height: 280px;
-  width: 210px;
+  width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* border: 1px solid black; */
+  border-radius: 5px;
+}
+.product:hover {
+  background-color: rgb(233, 233, 233);
 }
 .product > img {
   padding-bottom: 10px;
@@ -24,4 +29,45 @@
 }
 .preview {
   height: 200px;
+}
+.productModal {
+  width: 600px;
+  height: 250px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+.imgPrev {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 35%;
+  border-radius: 5px;
+  height: 100%;
+  background-color: rgb(240, 240, 240);
+}
+.describtionPrev {
+  position: relative;
+  bottom: 230px;
+  left: 37%;
+  width: 62%;
+  height: 90%;
+}
+.describtionPrev > p:first-child {
+  font-size: 35px;
+}
+.describtionPrev > p {
+  padding: 5px;
+}
+.opis {
+  color: rgb(85, 85, 85);
+}
+.dodaj {
+  padding: 0 3px 0 3px;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.rozmiary {
+  padding-left: 5px;
 }

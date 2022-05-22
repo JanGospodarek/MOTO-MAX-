@@ -177,6 +177,10 @@
   .describtion {
     line-height: 17px;
   }
+  .contentMain {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
 }
 @media (min-width: 1400px) {
   main {
