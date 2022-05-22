@@ -62,13 +62,13 @@ export const productD = [
   {
     describtion: "Manetki PROTAPER",
     price: 59,
-    fileName: "manetki1",
+    fileName: "manetki2",
     id: 11,
   },
   {
     describtion: "Manetki PROTAPER",
     price: 59,
-    fileName: "manetki1",
+    fileName: "manetki3",
     id: 1,
   },
 ];

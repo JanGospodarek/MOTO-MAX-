@@ -7,15 +7,19 @@ export class View {
   window;
   overlay = document.querySelector(".overlay");
 
-  render(data, clear = true, useWindow = false) {
+  render(data, clear = true, useWindow = false, hideBtn = false) {
     this.data = data;
     const markup = this.generateMarkup();
+    if (hideBtn) {
+      document.querySelector(".kup").classList.add("hidden");
+    }
     if (clear) {
       if (useWindow) {
         this.window.innerHTML = "";
         this.window.insertAdjacentHTML("afterbegin", markup);
       } else {
         this.parentElement.innerHTML = "";
+        // console.log(markup);
         this.parentElement.insertAdjacentHTML("afterbegin", markup);
       }
     }

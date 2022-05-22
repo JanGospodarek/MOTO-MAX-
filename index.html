@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./src/css/main.css" />
-    <script defer type="module" src="./src/js/controller.js"></script>
   </head>
   <body>
     <main>
@@ -56,7 +55,7 @@
           <button class="btn flexCenter">
             <img src="./src/img/account-icon.png" alt="" width="30" />
           </button>
-          <button class="btn flexCenter">
+          <button class="btn flexCenter cart">
             <img src="./src/img/basket-icon.png" alt="" width="30" />
           </button>
         </div>
@@ -192,6 +191,20 @@
       </div>
 
       <div class="productModal modal hidden"></div>
+      <div class="cartModal modal hidden">
+        <p>Koszyk</p>
+        <div class="productsCart">
+          <p>Koszyk jest pusty</p>
+        </div>
+        <div class="btnConte">
+          <button class="delete hidden">Usuń</button>
+          <button class="kup hidden">Kup teraz</button>
+        </div>
+      </div>
+      <div id="succesMsg" class="modal flexCenter hidden">
+        <p>Produkt dodany do koszyka!</p>
+      </div>
     </main>
+    <script type="module" src="./src/js/controller.js"></script>
   </body>
 </html>

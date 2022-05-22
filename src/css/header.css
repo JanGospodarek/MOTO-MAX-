@@ -51,6 +51,7 @@
 }
 .btn {
   height: 90%;
+  cursor: pointer;
 }
 .dropMenu {
   position: relative;

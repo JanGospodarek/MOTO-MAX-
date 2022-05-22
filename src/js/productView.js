@@ -8,7 +8,7 @@ class productView extends View {
 
   generateMarkup() {
     let markup = "";
-    console.log(this.data);
+
     this.data.forEach((product, i) => {
       markup += `
           <button data-id="${product.id}" href="" class="product">
@@ -29,6 +29,7 @@ class productPreviewView extends View {
   window = document.querySelector(".productModal");
   data;
 
+  formData;
   addHandlerProductMenu(handler) {
     this.parentElement.addEventListener("click", (e) => {
       e.preventDefault();
@@ -38,6 +39,23 @@ class productPreviewView extends View {
       handler(dataset);
     });
   }
+  addHandlerSubmit(handler) {
+    const form = document.querySelector(".productForm");
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const dataArr = [...new FormData(this)];
+      const data = Object.fromEntries(dataArr);
+      handler(data);
+
+      document.querySelector("#succesMsg").classList.remove("hidden");
+      setTimeout(() => {
+        document.querySelector("#succesMsg").classList.add("hidden");
+        // document.querySelector(".productModal").classList.add("hidden");
+        // document.querySelector(".overlay").classList.add("hidden");
+      }, 2000);
+    });
+  }
+
   generateMarkup() {
     let markup = `
     <div class="imgPrev flexCenter">
@@ -45,6 +63,7 @@ class productPreviewView extends View {
         </div>
         <div class="describtionPrev">
           <p>${this.data.describtion}</p>
+           <p class="cena">${this.data.price} zł</p>
           <p class="opis">Świetny kask, który zapewni Ci najlepszą ochronę</p>
           <form class="productForm">
             <p class="rozmiary">
