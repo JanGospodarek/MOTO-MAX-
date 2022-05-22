@@ -42,6 +42,7 @@
 .submit {
   background: none;
   border: none;
+  cursor: pointer;
 }
 .btnCont {
   display: flex;
@@ -61,28 +62,30 @@
   transition: all 0.2s;
   /* border: 1px solid black; */
 }
-#akcesoria {
-  top: 128px;
-  left: 343px;
-  height: 0;
-  /* height: 120px;
-   */
-  width: 120px;
-}
-#czesci {
-  top: 128px;
-  right: 529px;
-  height: 0;
-  /* height: 60px; */
-  width: 50px;
-}
-#ubrania {
-  top: -18px;
-  left: 689px;
-  height: 0;
-  /* height: 60px; */
-  width: 90px;
-}
+/* @media (min-width: 1100px) {
+  #akcesoria {
+    top: 128px;
+    left: 343px;
+    height: 0;
+  
+    width: 120px;
+  }
+  #czesci {
+    top: 128px;
+    right: 529px;
+    height: 0;
+
+    width: 50px;
+  }
+  #ubrania {
+    top: -18px;
+    left: 689px;
+    height: 0;
+
+    width: 90px;
+  }
+} */
+
 .dropMenu a {
   width: 100%;
   height: 30px;

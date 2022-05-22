@@ -19,7 +19,7 @@ class MenuView extends View {
     function helper() {
       if (element === "akcesoria") dropMenu.style.height = "120px";
       if (element === "czesci") dropMenu.style.height = "60px";
-      if (element === "ubrania") dropMenu.style.height = "120px";
+      if (element === "ubrania") dropMenu.style.height = "60px";
     }
     btn.addEventListener("mouseover", helper);
     btn.addEventListener("mouseleave", () => {
