@@ -55,18 +55,12 @@ class productPreviewView extends View {
       }, 2000);
     });
   }
-
-  generateMarkup() {
-    let markup = `
-    <div class="imgPrev flexCenter">
-          <img src="./src/img/products/${this.data.fileName}.png" alt="" />
-        </div>
-        <div class="describtionPrev">
-          <p>${this.data.describtion}</p>
-           <p class="cena">${this.data.price} zł</p>
-          <p class="opis">Świetny kask, który zapewni Ci najlepszą ochronę</p>
-          <form class="productForm">
-            <p class="rozmiary">
+  renderFormSelect() {
+    if (this.data.type === "manetki") {
+      return " ";
+    } else {
+      return `
+      <p class="rozmiary">
               Wybierz rozmiar:
               <select name="rozmiar">
                 <option value="L">L</option>
@@ -75,10 +69,25 @@ class productPreviewView extends View {
                 <option value="XS">XS</option>
               </select>
             </p>
-            <input class="dodaj" type="submit" value="Dodaj do koszyka" />
+      `;
+    }
+  }
+  generateMarkup() {
+    let markup = `
+    <div class="imgPrev flexCenter">
+          <img src="./src/img/products/${this.data.fileName}.png" alt="" />
+        </div>
+        <div class="describtionPrev">
+          <p>${this.data.describtion}</p>
+           <p class="cena">${this.data.price} zł</p>
+          <p class="opis">${this.data.additionalDesc}</p>
+          <form class="productForm">
+            ${this.renderFormSelect()}
+            <button class="dodaj" type="submit"  >Dodaj do koszyka</button
           </form>
         </div>
     `;
+    console.log(markup);
     return markup;
   }
 }
