@@ -10,9 +10,9 @@ export class View {
   render(data, clear = true, useWindow = false, hideBtn = false) {
     this.data = data;
     const markup = this.generateMarkup();
-    if (hideBtn) {
-      document.querySelector(".kup").classList.add("hidden");
-    }
+    // if (hideBtn) {
+    //   document.querySelector(".kup").classList.add("hidden");
+    // }
     if (clear) {
       if (useWindow) {
         this.window.innerHTML = "";
@@ -28,6 +28,7 @@ export class View {
   addHandlerShowWindow(array = false) {
     // this.btnOpen = document.querySelector(`.${query}`);
     // console.log(this.btnOpen);
+
     if (array) {
       this.btnOpen.forEach((element) => {
         element.addEventListener("click", this.showWindow.bind(this));
@@ -54,5 +55,6 @@ export class View {
     this.window.classList.add("hidden");
   }
   generateMarkup() {}
+  resetCart() {}
 }
 export const view = new View();

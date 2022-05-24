@@ -2,7 +2,9 @@
 .contentSide > p {
   font-size: 45px;
 }
-
+.contentMain::-webkit-scrollbar {
+  display: none;
+}
 .contentMain {
   display: flex;
   flex-wrap: wrap;
