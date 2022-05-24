@@ -7,7 +7,6 @@ export const slider = function () {
   let curSlide = 0;
   const maxSlide = slides.length;
 
-  // Functions
   const createDots = function () {
     slides.forEach(function (_, i) {
       dotContainer.insertAdjacentHTML(
@@ -33,7 +32,6 @@ export const slider = function () {
     );
   };
 
-  // Next slide
   const nextSlide = function () {
     if (curSlide === maxSlide - 1) {
       curSlide = 0;
@@ -63,7 +61,6 @@ export const slider = function () {
   };
   init();
 
-  // Event handlers
   btnRight.addEventListener("click", nextSlide);
   btnLeft.addEventListener("click", prevSlide);
 

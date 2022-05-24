@@ -15,7 +15,6 @@ a {
   box-sizing: border-box;
   font-family: "Kanit", sans-serif;
   line-height: 20px;
-  /* transition: all 0.2s; */
 }
 input {
   background-color: none;

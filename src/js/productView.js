@@ -50,8 +50,6 @@ class productPreviewView extends View {
       document.querySelector("#succesMsg").classList.remove("hidden");
       setTimeout(() => {
         document.querySelector("#succesMsg").classList.add("hidden");
-        // document.querySelector(".productModal").classList.add("hidden");
-        // document.querySelector(".overlay").classList.add("hidden");
       }, 2000);
     });
   }
@@ -87,7 +85,6 @@ class productPreviewView extends View {
           </form>
         </div>
     `;
-    console.log(markup);
     return markup;
   }
 }

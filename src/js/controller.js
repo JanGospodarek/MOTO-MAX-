@@ -1,6 +1,4 @@
 "use strict";
-//Architektura MVC
-
 import { slider } from "./slider.js";
 import * as model from "./model.js";
 import { products } from "./productView.js";
@@ -40,12 +38,10 @@ function controlCart(data) {
   model.addToCart(data);
   cartView.addHandlerRenderOnOpen(controlRenderCart);
   cartView.addHandlerDeleteProduct(controlDeleteProduct);
-  console.log(model);
 }
 
 function controlRenderCart() {
   if (model.state.cart.length === 0) {
-    // console.log(model.state.cart);
     cartView.render(model.state.cart, true, false);
     cartView.resetCart();
   } else {
@@ -64,7 +60,6 @@ function init() {
   slider();
 }
 init();
-// window.addEventListener("load", init);
 ///////////////////////
 
-// alert("W README.txt jest opisana cała funkcjonalność strony");
+alert("W README.txt jest opisana cała funkcjonalność strony");

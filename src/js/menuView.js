@@ -8,9 +8,9 @@ class MenuView extends View {
     super();
     this.addHandlerShowWindow();
     this.addHandlerHideWindow();
-    this.handlerDropMenu("akcesoria");
-    this.handlerDropMenu("czesci");
-    this.handlerDropMenu("ubrania");
+    ["akcesoria", "czesci", "ubrania"].forEach((el) =>
+      this.handlerDropMenu(el)
+    );
   }
 
   handlerDropMenu(element) {

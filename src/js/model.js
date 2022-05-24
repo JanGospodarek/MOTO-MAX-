@@ -15,5 +15,4 @@ export function addToCart(data) {
     size: rozmiar,
   };
   state.cart.push(product);
-  console.log(state.cart);
 }

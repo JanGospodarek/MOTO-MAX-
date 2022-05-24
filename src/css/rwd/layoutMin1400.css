@@ -21,22 +21,19 @@
     top: 95px;
     left: 398px;
     height: 0;
-    /* height: 120px;
-       */
+
     width: 120px;
   }
   #czesci {
     top: 95px;
     right: 700px;
     height: 0;
-    /* height: 60px; */
     width: 50px;
   }
   #ubrania {
     top: -50px;
     left: 860px;
     height: 0;
-    /* height: 60px; */
     width: 90px;
   }
   #konto {

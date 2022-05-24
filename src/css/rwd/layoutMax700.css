@@ -2,20 +2,7 @@
   main {
     min-width: 700px;
   }
-  /* .menu {
-      height: 100px;
-    }
-    .menuBtn {
-      width: 70px;
-      height: 70px;
-      border-radius: 5px;
-      background-color: lightgray;
-      cursor: pointer;
-    }
-    .logo {
-      display: flex;
-      justify-content: space-evenly;
-    }*/
+
   .menu {
     height: 100px;
   }
