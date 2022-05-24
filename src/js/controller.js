@@ -7,12 +7,13 @@ import { products } from "./productView.js";
 import { menuView } from "./menuView.js";
 import { productsPrevs } from "./productView.js";
 import { cartView } from "./cartView.js";
-
+import { logView } from "./logView.js";
 function controlProducts(data) {
   const productIndex = model.state.products.findIndex(
     (product) => product.id === +data
   );
   model.state.currProduct = model.state.products[productIndex];
+  console.log(model.state.currProduct);
   productsPrevs.render(model.state.currProduct, true, true);
   productsPrevs.addHandlerSubmit(controlCart);
 }
@@ -44,7 +45,8 @@ function controlCart(data) {
 
 function controlRenderCart() {
   if (model.state.cart.length === 0) {
-    cartView.render(model.state.cart, _, _, true);
+    // console.log(model.state.cart);
+    cartView.render(model.state.cart, true, false);
     cartView.resetCart();
   } else {
     cartView.render(model.state.cart);
@@ -57,10 +59,12 @@ function init() {
   products.addHandlerHideWindow();
   products.addHandlerShowWindow(true);
   productsPrevs.addHandlerProductMenu(controlProducts);
+  cartView.addHandlerShowWindow();
+  cartView.addHandlerHideWindow();
   slider();
 }
 init();
 // window.addEventListener("load", init);
 ///////////////////////
 
-aler("W README.txt jest opisana cała funkcjonalność strony");
+// alert("W README.txt jest opisana cała funkcjonalność strony");

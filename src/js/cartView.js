@@ -1,4 +1,5 @@
 import { View } from "./View.js";
+import * as model from "./model.js";
 class CartView extends View {
   parentElement = document.querySelector(".productsCart");
   btnOpen = document.querySelector(".cart");
@@ -7,14 +8,17 @@ class CartView extends View {
   btnDelete = document.querySelector(".delete");
   constructor() {
     super();
-    this.addHandlerShowWindow();
-    this.addHandlerHideWindow();
   }
   addHandlerRenderOnOpen(handler) {
     this.btnOpen.addEventListener("click", (e) => {
       handler();
-      this.btnBuy.classList.remove("hidden");
-      this.btnDelete.classList.remove("hidden");
+      if (model.state.cart.length === 0) {
+        this.btnBuy.classList.add("hidden");
+        this.btnDelete.classList.add("hidden");
+      } else {
+        this.btnBuy.classList.remove("hidden");
+        this.btnDelete.classList.remove("hidden");
+      }
     });
   }
   addHandlerDeleteProduct(handler) {
@@ -35,10 +39,12 @@ class CartView extends View {
       markup += `
             <div  class="productCart">
             <div class="imgPrev flexCenter">
-              <img src="./src/img/products/${product.fileName}.png" alt="" width="70" />
+              <img src="./src/img/products/${
+                product.fileName
+              }.png" alt="" width="70" />
             </div>
             <p>${product.describtion}</p>
-           <p>Rozmiar: ${product.size}</p>
+           <p>Rozmiar: ${product.size ? product.size : "uniwersalny"}</p>
            
           </div>`;
     });

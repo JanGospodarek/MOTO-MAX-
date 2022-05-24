@@ -1,0 +1,46 @@
+@media (max-width: 700px) {
+  main {
+    min-width: 700px;
+  }
+  /* .menu {
+      height: 100px;
+    }
+    .menuBtn {
+      width: 70px;
+      height: 70px;
+      border-radius: 5px;
+      background-color: lightgray;
+      cursor: pointer;
+    }
+    .logo {
+      display: flex;
+      justify-content: space-evenly;
+    }*/
+  .menu {
+    height: 100px;
+  }
+  .contentOne {
+    padding-bottom: 20px;
+  }
+  .contentTwo {
+    padding-bottom: 20px;
+  }
+
+  #ubrania {
+    height: 0;
+  }
+  #akcesoria {
+    height: 0;
+  }
+  #czesci {
+    height: 0;
+  }
+  #konto {
+    height: 0;
+  }
+  footer {
+    background-color: lightgrey;
+    height: 140px;
+    border-radius: 5px;
+  }
+}

@@ -1,0 +1,29 @@
+@media (min-width: 700px) {
+  .menu {
+    height: 100px;
+  }
+  .contentOne {
+    padding-bottom: 20px;
+  }
+  .contentTwo {
+    padding-bottom: 20px;
+  }
+
+  #ubrania {
+    height: 0;
+  }
+  #akcesoria {
+    height: 0;
+  }
+  #czesci {
+    height: 0;
+  }
+  #konto {
+    height: 0;
+  }
+  footer {
+    background-color: lightgrey;
+    height: 140px;
+    border-radius: 5px;
+  }
+}

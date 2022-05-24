@@ -1,9 +1,17 @@
+/*  */
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Lato:ital,wght@1,900&family=Roboto+Slab:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,800&display=swap");
+/*  */
+@import url(./rwd/layoutMax700.css);
+@import url(./rwd/layoutMin700.css);
+@import url(./rwd/layoutMin1100.css);
+@import url(./rwd/layoutMax1100.css);
+@import url(./rwd/layoutMin1400.css);
+/*  */
 @import url(common.css);
-@import url(layout.css);
 @import url(header.css);
 @import url(center.css);
 @import url(slider.css);
 @import url(footer.css);
 @import url(contact.css);
-@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Lato:ital,wght@1,900&family=Roboto+Slab:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,800&display=swap");
+@import url(modals.css); /*  */

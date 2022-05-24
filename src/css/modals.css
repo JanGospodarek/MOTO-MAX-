@@ -1,0 +1,105 @@
+/* preview produktu */
+.productModal {
+  width: 600px;
+  height: 250px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+.imgPrev {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 35%;
+  border-radius: 5px;
+  height: 100%;
+  background-color: rgb(240, 240, 240);
+}
+.describtionPrev {
+  position: relative;
+  bottom: 230px;
+  left: 37%;
+  width: 62%;
+  height: 90%;
+}
+.describtionPrev > p:first-child,
+.cartModal > p:first-child {
+  font-size: 35px;
+}
+.describtionPrev > p {
+  padding: 5px;
+}
+.opis {
+  color: rgb(85, 85, 85);
+}
+.dodaj {
+  padding: 0 3px 0 3px;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.rozmiary {
+  padding-left: 5px;
+}
+/* koszyk */
+.cartModal {
+  padding: 5px;
+  width: 500px;
+  min-height: 150px;
+  height: auto;
+  background-color: white;
+  border-radius: 5px;
+}
+.productCart {
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 98%;
+  height: 80px;
+  display: flex;
+  border-bottom: 1px solid grey;
+  align-items: center;
+  justify-content: space-around;
+}
+.kup,
+.delete {
+  font-size: larger;
+  display: block;
+  margin: 0 auto;
+  margin-top: 5px;
+  background-color: lightgrey;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.kup:hover,
+.delete:hover {
+  background-color: rgb(194, 194, 194);
+}
+.dodaj {
+  background-color: lightgrey;
+  padding: 5px;
+  border-radius: 5px;
+}
+.dodaj:hover {
+  background-color: rgb(194, 194, 194);
+}
+select {
+  background-color: rgb(224, 224, 224);
+  border: none;
+  border-radius: 3px;
+}
+.productCart > .imgPrev {
+  width: auto;
+  background-color: white;
+}
+.productsCart > p {
+  padding-top: 10px;
+}
+#succesMsg {
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  background-color: rgb(228, 227, 227);
+  border-radius: 5px;
+  z-index: 9999;
+}
